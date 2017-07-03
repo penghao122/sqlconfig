@@ -6,9 +6,9 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.StringWriter;
 import java.io.Writer;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 
 import org.apache.commons.collections.CollectionUtils;
 import org.apache.commons.lang.StringUtils;
@@ -29,9 +29,9 @@ public final class NamedQueryUtil {
 
     private  Logger log = Logger.getLogger(NamedQueryUtil.class);
 
-    private  Map<String, String> xmlCache = new HashMap<String, String>();
+    private  Map<String, String> xmlCache = new ConcurrentHashMap<String, String>();
 
-    private  Map<String, String> cache = new HashMap<String, String>();
+    private  Map<String, String> cache = new ConcurrentHashMap<String, String>();
 
     private  XStream xstream;
 
@@ -51,8 +51,6 @@ public final class NamedQueryUtil {
     	
     	recursiveLoadQueries(xmlFileName);
     }
-
-
 
     /**
      * 
