@@ -1,0 +1,11 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/dw_public/!svn/ver/1660/sqlconfig/trunk/src/main/resources/queries/mysql
+END
+query-sa-mysql.xml
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/dw_public/!svn/ver/1660/sqlconfig/trunk/src/main/resources/queries/mysql/query-sa-mysql.xml
+END

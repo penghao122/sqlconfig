@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqlConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:mtr="http://www.duowan.com"
+    xsi:schemaLocation="http://www.duowan.com ../../query.xsd">
+
+     <sql-query name="selectUserFromAccessGroupByPage">
+           <sql>
+		        <![CDATA[
+				        SELECT id, email, login_name  
+					        FROM login_user 
+					        WHERE 1=1 
+					 		<#include 'selectUserFromWhere'/>
+					        ORDER BY id
+		           ]]>
+           </sql>
+     </sql-query>
+         
+     <sql-query name="selectUserFromWhere">
+       <sql>
+           <![CDATA[
+
+ 		        <#if loginName??> 
+		        	AND login_name= ${loginName}
+		        </#if> 
+		        <#if email??> 
+		       		 AND email=${email}
+		        </#if> 
+		        <#if name??> 
+		       		 AND name=${name} 
+		        </#if> 
+		        <#if product??> 
+		       		 AND product=${product} 
+		        </#if> 
+		        <#if game??> 
+		       		 AND game=${game}  
+		        </#if> 
+           ]]>
+         </sql>
+     </sql-query>
+
+
+     
+    
+</sqlConfig>

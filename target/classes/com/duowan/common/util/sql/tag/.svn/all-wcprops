@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repos/dw_public/!svn/ver/1648/sqlconfig/trunk/src/main/java/com/duowan/common/util/sql/tag
+END
+SQLQueryElement.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/repos/dw_public/!svn/ver/1648/sqlconfig/trunk/src/main/java/com/duowan/common/util/sql/tag/SQLQueryElement.java
+END
+NamedQueriesElement.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/repos/dw_public/!svn/ver/1648/sqlconfig/trunk/src/main/java/com/duowan/common/util/sql/tag/NamedQueriesElement.java
+END
